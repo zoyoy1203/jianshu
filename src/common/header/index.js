@@ -21,7 +21,8 @@ import {
 class Header extends Component {
 
     getListArea() {
-        if (this.props.focused) {
+        const { focused, list } = this.props;
+        if (focused) {
             return (
                 <SearchInfo>
                     <SearchInfoTitle>
@@ -30,7 +31,7 @@ class Header extends Component {
                     </SearchInfoTitle>
                     <SearchInfoList>
                         {
-                            this.props.list.map((item) => {
+                            list.map((item) => {
                                 return <SearchInfoItem key={item}>{item}</SearchInfoItem>
                             })
                         }
@@ -45,6 +46,7 @@ class Header extends Component {
 
     
     render() {
+        const { focused, handleInputBlur, handleInputFocus } = this.props;
         return (
             <HeaderWrapper>
                 <Logo/>
@@ -57,17 +59,17 @@ class Header extends Component {
                     </NavItem>
                     <SearchWrapper>
                         <CSSTransition
-                            in={this.props.focused}
+                            in={focused}
                             timeout={200}
                             classNames="slide"
                         >
                             <NavSearch 
-                                className={this.props.focused ? 'focused' : ''}
-                                onFocus = {this.props.handleInputFocus}
-                                onBlur= {this.props.handleInputBlur}
+                                className={focused ? 'focused' : ''}
+                                onFocus = {handleInputFocus}
+                                onBlur= {handleInputBlur}
                             ></NavSearch>
                         </CSSTransition>
-                        <span className={this.props.focused ? 'focused iconfont' : 'iconfont'}>&#xe751;</span>
+                        <span className={focused ? 'focused iconfont' : 'iconfont'}>&#xe751;</span>
                     { this.getListArea() }
                     </SearchWrapper>
                     
