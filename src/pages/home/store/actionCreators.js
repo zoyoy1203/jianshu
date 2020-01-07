@@ -2,7 +2,6 @@
 import axios from 'axios';
 import * as  actionTypes from './actionTypes';
 import { fromJS } from 'immutable';
-import { act } from 'react-dom/test-utils';
 
 
 const changeHomeData = (result) => ({
