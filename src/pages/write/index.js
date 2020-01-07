@@ -1,26 +1,29 @@
 import React, { PureComponent } from 'react';
+import { Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+
+
 
 class Write extends PureComponent {
     render() {
-        return (
-           <LoginWrapper>
-               <LoginBox>
-                <Input placeholder='账号'></Input>
-                <Input placeholder='密码'></Input>
-                <Button>登录</Button>
-               </LoginBox>
-           </LoginWrapper>
-        )
+        const { loginStatus }  = this.props;
+        if(loginStatus){
+            return (
+               <div>写文章页面</div>
+             )
+        }else{
+            return <Redirect to='/login' />
+        }
+       
     }
 
 }
 
 const mapState = (state) => ({
-  
+  loginStatus: state.getIn(['login','login'])
 });
 
 const mapDispatch = (dispatch) => ({
-   
+  
 })
 export default connect(mapState,mapDispatch)(Write);
