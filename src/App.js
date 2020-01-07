@@ -15,15 +15,15 @@ class App extends Component {
         <GlobalStyle></GlobalStyle>
         <IconfontStyle></IconfontStyle>
         <Provider store={store}>
-          <div>
+       
+          <BrowserRouter>
+            <div>
             <Header/>
-            <BrowserRouter>
-              <div>
-                <Route path='/' exact component={Home}></Route>
-                <Route path='/detail' exact component={Detail}></Route>
-              </div>
-            </BrowserRouter>
-          </div>
+              <Route path='/' exact component={Home}></Route>
+              <Route path='/detail' exact component={Detail}></Route>
+            </div>
+          </BrowserRouter>
+  
         </Provider>
     
       </Fragment>
