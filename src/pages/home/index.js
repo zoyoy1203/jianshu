@@ -14,7 +14,6 @@ import {
 
 class Home extends PureComponent {
 
-
     handleScrollTop() {
         window.scrollTo(0,0);
     }
@@ -23,6 +22,7 @@ class Home extends PureComponent {
         return (
             <HomeWrapper>
                 <HomeLeft>
+                    <img className='banner' src="https://upload.jianshu.io/admin_banners/web_images/4866/3867aec8b10cb452ef5ff4448f59c1b335b6af54.png?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540" alt="" />
                     <List />
                 </HomeLeft>
                 <HomeRight>

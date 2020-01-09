@@ -47,21 +47,38 @@
         "writerList": [
             {
                 "id": 1,
-                "avatar": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-                "name": "卢璐说",
-                "desc": "写了1375.9k字 · 28.3k喜欢"
+                "nickname": "董克平日记",
+                "avatar": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+                "total_wordage": 812820,
+                "total_likes_count": 2624
             },
             {
-                "id": 1,
-                "avatar": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-                "name": "卢璐说",
-                "desc": "写了1375.9k字 · 28.3k喜欢"
+                "id": 2,
+                "nickname": "董克平日记",
+                "avatar": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+                "total_wordage": 812820,
+                "total_likes_count": 2624
             },
             {
-                "id": 1,
-                "avatar": "https://upload.jianshu.io/users/upload_avatars/301940/189d69dd-af7c-4290-9e2c-89e98acf3603.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/96/h/96/format/webp",
-                "name": "卢璐说",
-                "desc": "写了1375.9k字 · 28.3k喜欢"
+                "id": 3,
+                "nickname": "董克平日记",
+                "avatar": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+                "total_wordage": 812820,
+                "total_likes_count": 2624
+            },
+            {
+                "id": 4,
+                "nickname": "董克平日记",
+                "avatar": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+                "total_wordage": 812820,
+                "total_likes_count": 2624
+            },
+            {
+                "id": 5,
+                "nickname": "董克平日记",
+                "avatar": "https://upload.jianshu.io/users/upload_avatars/9988193/fc26c109-1ae6-4327-a298-2def343e9cd8.jpg",
+                "total_wordage": 812820,
+                "total_likes_count": 2624
             }
         ]
     }

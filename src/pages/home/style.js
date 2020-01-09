@@ -11,6 +11,10 @@ export const HomeLeft = styled.div`
     margin-left: 15px;
     padding-top: 30px;
     float: left;
+    .banner{
+        width:100%;
+        border-radius: 10px;
+    }
 `
 
 export const HomeRight = styled.div`
@@ -61,9 +65,8 @@ export const RecommendItem = styled.div`
 
 export const WriterWrapper = styled.div`
     width: 278px;
-    border: 1px solid #dcdcdc;
     border-radius: 3px;
-    height: 300px;
+    height: 400px;
     line-height: 300px;
     text-align: center;
 `
@@ -73,6 +76,7 @@ export const WriterTitle = styled.div`
     line-height: 20px;
     font-size: 14px;
     color: #969696;
+    text-align: left;
 `
 
 export const WriterSwitch = styled.div`
@@ -86,6 +90,65 @@ export const WriterSwitch = styled.div`
         margin-right: 2px;
         transition: all .2s ease-in;
         transfrom-origin: center center;
+    }
+`
+export const WriterList = styled.ul`
+    position: relative;
+    .find_more{
+        box-sizing:border-box;
+        position: absolute;
+        left:5%;
+        width: 90%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        color: #787878;
+        background-color: #f7f7f7;
+        border: 1px solid #dcdcdc;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+`
+export const WriterItem = styled.li`
+    width:100%;
+    height:50px;
+    line-height:50px;
+    margin-bottom:15px;
+    .avatar_img{
+        float: left;
+        width: 48px;
+        height: 48px;
+        margin-left:5px;
+        cursor: pointer;
+        img{
+            width:100%;
+            height: 100%;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+        }
+    }
+    .name{
+        margin-right: 60px;
+        font-size: 14px;
+        color: #000;
+        text-decoration: none;
+    }
+    .follow{
+        float: right;
+        font-size: 14px;
+        color: #42c02e;
+        text-decoration: none;
+    }
+    p{
+        text-align: left;
+        padding-left: 70px;
+        height: 25px;
+        line-height: 25px;
+        &.desc{
+            margin-top: 2px;
+            font-size: 12px;
+            color: #969696;
+        }
     }
 `
 
