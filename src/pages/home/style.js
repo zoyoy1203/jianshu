@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const HomeWrapper = styled.div`
     width: 960px;
     margin: 0 auto;
-    overflow: hidden;
 `
 
 export const HomeLeft = styled.div`
@@ -14,6 +13,7 @@ export const HomeLeft = styled.div`
     .banner{
         width:100%;
         border-radius: 10px;
+        margin-bottom:25px;
     }
 `
 
@@ -26,6 +26,7 @@ export const ListItem = styled.div`
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #dcdcdc;
+    text-decoration: none;
     .pic {
         width: 125px;
         height: 100px;
@@ -33,21 +34,42 @@ export const ListItem = styled.div`
         float: right;
         border-radius: 10px;
     }
+   
 `
 
 export const ListInfo = styled.div`
+    box-sizing: border-box;
     width: 500px;
+    height: 100px;
     float: left;
+    margin-bottom:10px;
+    padding-right:20px;
     .title {
         line-height: 27px;
         font-size: 18px;
         font-weight: bold;
         color: #333;
+        margin-bottom: 10px;
     }
     .desc {
-        font-size: 13px;
-        line-height: 18px;
+        font-size: 14px;
+        line-height: 25px;
         color: #999;
+    }
+    
+`
+export const ListDetail = styled.div`
+    float: left;
+    width: 500px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 10px;
+    span{
+        margin-right: 10px;
+        color: #b4b4b4;
+        &.icon1 {
+            color: #ea6f5a;
+        }
     }
 `
 
@@ -99,14 +121,17 @@ export const WriterList = styled.ul`
         position: absolute;
         left:5%;
         width: 90%;
-        height: 30px;
-        line-height: 30px;
-        font-size: 13px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 14px;
         color: #787878;
         background-color: #f7f7f7;
         border: 1px solid #dcdcdc;
         border-radius: 4px;
         text-decoration: none;
+        .icon{
+            font-size: 13px;
+        }
     }
 `
 export const WriterItem = styled.li`
@@ -138,6 +163,9 @@ export const WriterItem = styled.li`
         font-size: 14px;
         color: #42c02e;
         text-decoration: none;
+        .icon{
+            font-size:13px;
+        }
     }
     p{
         text-align: left;

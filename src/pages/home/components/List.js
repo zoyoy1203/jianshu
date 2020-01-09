@@ -3,6 +3,7 @@ import {
     ListItem,
     ListInfo,
     LoadMore,
+    ListDetail
 } from '../style';
 import { connect } from 'react-redux';
 import { actionCreators } from '../store';
@@ -23,6 +24,12 @@ class List extends PureComponent {
                                         <h3 className='title'>{item.get('title')}</h3>
                                         <p className='desc'>{item.get('desc')}</p>
                                     </ListInfo>
+                                    <ListDetail>
+                                        <span  className='iconfont icon icon1'>&#xe604;  19.4</span>
+                                        <span>东后春初</span>
+                                        <span  className='iconfont icon'>&#xe613; 13</span> 
+                                        <span  className='iconfont icon'>&#xe61a; 64</span> 
+                                    </ListDetail>
                                 </ListItem>
                             </Link>
                          

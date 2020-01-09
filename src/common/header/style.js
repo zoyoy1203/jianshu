@@ -31,7 +31,7 @@ export const Nav = styled.div`
 export const NavItem = styled.div`
     line-height: 56px;
     padding: 0 15px;
-    font-size:17px;
+    font-size: 18px;
     color: #333;
     &.left {
         float: left;
@@ -154,7 +154,7 @@ export const Addition = styled.div`
 
 export const Button = styled.div`
     float: right;
-    amrgin-top: 9px;
+    margin-top: 9px;
     margin-right: 20px;
     padding: 0 20px;
     line-height: 38px;

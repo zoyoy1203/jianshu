@@ -29,7 +29,10 @@ class Writer extends PureComponent {
                                 </a>
                                 <p>
                                     <a className="name"  href="#">{item.get('nickname')}</a>
-                                    <a className="follow"  href="#">关注</a>
+                                    <a className="follow"  href="#">
+                                        <span  className='iconfont icon'>&#xe641;</span>
+                                        关注
+                                    </a>
                                 </p>
                                 <p className="desc">写了{item.get('total_wordage')}字·{item.get('total_likes_count')}喜欢</p>
                             </WriterItem>
@@ -38,6 +41,7 @@ class Writer extends PureComponent {
                 }     
                 <a href="#" className="find_more">
                     查看全部
+                    <span  className='iconfont icon'>&#xe634;</span>
                 </a>        
                 </WriterList>
               
